@@ -48,7 +48,7 @@
 
   seats.forEach(seat => {
     seat.addEventListener("click", function () {
-
+      if (seat.classList.contains("occupied")) return;
       if (seat.classList.contains("selected")) {
         seat.classList.remove("selected");
         selectedSeats = selectedSeats.filter(s => s !== seat);
