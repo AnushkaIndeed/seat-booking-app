@@ -1,15 +1,14 @@
-//Create you project here from scratch
 
   document.addEventListener("DOMContentLoaded", function () {
 
-  // ?? Movie List
+  // Movie List
   const moviesList = [
     { name: "Flash", price: 7 },
     { name: "Spiderman", price: 5 },
     { name: "Batman", price: 4}
   ];
 
-  // ?? Elements (MATCHING YOUR HTML)
+  // Elements 
   const select = document.getElementById("selectMovie");
   const movieName = document.getElementById("movieName");
   const moviePrice = document.getElementById("moviePrice");
@@ -103,8 +102,8 @@ function updateSelectedSeats() {
  
 
  
-  // 5 Continue Button
-  // ===============================
+  // Continue Button
+
   continueBtn.addEventListener("click", function () {
 
     if (selectedSeats.length === 0) {
@@ -126,8 +125,8 @@ function updateSelectedSeats() {
   });
 
 
-  // 6 Cancel Button
-  // ===============================
+  // Cancel Button
+  
   cancelBtn.addEventListener("click", function () {
 
     selectedSeats.forEach(seat => {
